@@ -1,0 +1,14 @@
+<?php
+include_once('connect.php');
+/*$id=$_GET['id'];
+$query="select * from `forum`.`club` where `id`='$id'";
+$result=mysql_query($query);*/
+echo "you are great";
+?>
+<html>
+
+<body>
+<p>this is great man</p>
+</body>
+
+</html>

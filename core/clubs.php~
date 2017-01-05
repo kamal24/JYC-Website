@@ -1,0 +1,25 @@
+
+
+<?php
+include_once("../slider.php");
+if(isset($_GET['id']))
+{
+$id=$_GET['id'];
+$query="select * from `clubs` where `id`='$id'";
+$result=mysql_query($query);
+echo "<div id='container'>";
+echo 'Enthusiasm, vigor, fun, excitemen....you name it, we got it..... This is the cultural club. The kaleidoscope of talent and exuberance, the vivid blend of creativity, art and glamour and not to forget, one of the only good ways to rejuvenate ourselves in the otherwise dull and boring life. Giving the students a respite from the never ending series of exams and practicals, this is the club which provides a platform for the various singing and dancing events taking place in JUIT. The various cultural nights organized are an excellent means of giving an impetus to the ocean of talent in the JUITians. The myth that the JUITians cannot perform and excel was disproved by each and every team that goes to various other colleges to display the talent and excellence. One of the happening and the
+most awaited event of the club is the Ramp that is organized. A slight ignition to the crowd of JUIT and it results in a tremendous showcasing of poise, glitz and glamour. In a competent world of today where people are just to let you down at any chance they find, it becomes all the more essential to have an essence of everything in our lives. The cultural club makes sure that each and every JUITian gets a chance to say that they are good in all the fields and can compete
+ with others in anything. The sole aim of cultural club is the All Round Development of 
+ an individual and we shall achieve it. COLOURS OF EXCELLENCE,SPREADING WITH BRILLIANCE..!';
+ echo "</div>";
+echo '<script type="text/javascript" >
+$("#styles").html("contact info:9805420194;name:kamal");
+</script>';
+}
+else {
+	echo "some error occured to extract data";
+	}
+?>
+
+

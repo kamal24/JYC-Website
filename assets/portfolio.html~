@@ -1,0 +1,232 @@
+
+
+<!-- Subhead -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+	<h1>Portfolio Page</h1>
+  </div>
+</header>
+
+  <div class="container">
+
+
+<section id="columns">
+		
+		
+		<div class="tab-content">
+<!-- Three with Caption Columns Begin -->
+
+		<div class="tab-pane active" id="tab1">
+			<div class="">
+				<div class="row">
+					<div class="span4">
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_1.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_2.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_3.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="span4">
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_4.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_5.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_6.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="span4">
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_7.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_8.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="thumb-pad">
+								<div class="thumbnail">
+									<img src="img/stock_images/700x430_1.jpg" alt="">
+									<div class="caption">
+										<h5>Thumbnail label</h5>
+										<p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.</p>
+										<a href="#" class="btn">Read More</a>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span12">
+<pre class="prettyprint linenums">
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="span4"&gt;
+			&lt;div class="thumb-pad"&gt;
+				&lt;div class="thumbnail"&gt;
+					&lt;img src="image_1.jpg" alt=""&gt;
+					&lt;div class="caption"&gt;
+					&lt;h5&gt;Thumbnail label&lt;/h5&gt;
+					&lt;p&gt;Text.&lt;/p&gt;
+					&lt;a href="#" class="btn"&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="span4"&gt;
+			&lt;div class="thumb-pad"&gt;
+				&lt;div class="thumbnail"&gt;
+					&lt;img src="image_1.jpg" alt=""&gt;
+					&lt;div class="caption"&gt;
+					&lt;h5&gt;Thumbnail label&lt;/h5&gt;
+					&lt;p&gt;Text.&lt;/p&gt;
+					&lt;a href="#" class="btn"&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="span4"&gt;
+			&lt;div class="thumb-pad"&gt;
+				&lt;div class="thumbnail"&gt;
+					&lt;img src="image_1.jpg" alt=""&gt;
+					&lt;div class="caption"&gt;
+					&lt;h5&gt;Thumbnail label&lt;/h5&gt;
+					&lt;p&gt;Text.&lt;/p&gt;
+					&lt;a href="#" class="btn"&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Three with Caption Columns End -->
+<!-- Three Columns Begin -->
+		
+</div>
+</section>
+</div>
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+  	<script src="js/jquery.isotope.min.js"></script>
+	<script>
+	$(function(){
+	  
+	  var $container = $('#container');
+
+	  $container.isotope({
+	    itemSelector : '.element'
+	  });
+	  
+	  
+	  var $optionSets = $('#options .option-set'),
+	      $optionLinks = $optionSets.find('a');
+
+	  $optionLinks.click(function(){
+	    var $this = $(this);
+	    // don't proceed if already selected
+	    if ( $this.hasClass('selected') ) {
+	      return false;
+	    }
+	    var $optionSet = $this.parents('.option-set');
+	    $optionSet.find('.selected').removeClass('selected');
+	    $this.addClass('selected');
+
+	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+	    var options = {},
+	        key = $optionSet.attr('data-option-key'),
+	        value = $this.attr('data-option-value');
+	    // parse 'false' as false boolean
+	    value = value === 'false' ? false : value;
+	    options[ key ] = value;
+	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+	      // changes in layout modes need extra logic
+	      changeLayoutMode( $this, options )
+	    } else {
+	      // otherwise, apply new options
+	      $container.isotope( options );
+	    }
+	    
+	    return false;
+	  });
+
+	  
+	});
+	</script>

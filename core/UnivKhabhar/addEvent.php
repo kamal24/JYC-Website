@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Gaurav
+ * Date: 1/28/14
+ * Time: 6:43 PM
+ * To change this template use File | Settings | File Templates.
+ */
+
+    include_once('dbconnect.php');
+    $newEvent = $_POST['event_name'];
+  
+
+    $query = "INSERT INTO `$dbname`.`events` (`id`,`event`) VALUES (null,'$newEvent')";
+    if(mysql_query($query)){
+        echo "<script> alert('event added successfully'); </script>";
+         mkdir('upload/'.$newEvent.'/');
+        header('location: '.$_SERVER['HTTP_REFERER'].'');
+    }

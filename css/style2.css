@@ -1,0 +1,52 @@
+/* font */
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('font/League_Gothic-webfont.eot');
+	src: local('☺'), url('font/League_Gothic-webfont.woff') format('woff'), url('font/League_Gothic-webfont.ttf') format('truetype'), url('font/League_Gothic-webfont.svg#webfontpm5EArBj') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+
+ ol, ul, li,mark{
+ 	
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+
+
+
+
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+
+
+/* END RESET CSS */
+
+/* Site styling */ 
+/*html {
+	
+	overflow-y: scroll;
+	background-image: url('../images/main-red-bg.gif');
+	background-color: #461714;
+}
+body {
+	margin: 0 auto;
+	padding: 0px 70px 10px;
+	font-family: arial;
+	font-size: 1em;
+	width: 820px;
+}*/

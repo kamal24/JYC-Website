@@ -1,0 +1,16 @@
+$("#clickme").click(function(){
+$.ajax{
+url:'filename.php';
+type:'post';
+data:{yourdata:$('#anotherelement').html();}
+}
+
+success:function (msg) {
+	alert('data returned from php:'+msg); 
+	}
+
+error:function (msg) {
+alert('ajax request failed!'+msg);	
+}
+
+});

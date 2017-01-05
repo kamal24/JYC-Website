@@ -1,0 +1,46 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Gaurav
+ * Date: 1/27/14
+ * Time: 12:11 PM
+ * To change this template use File | Settings | File Templates.
+ */
+
+
+    include_once('dbconnect.php');
+
+ /*  echo '
+        <DOCTYPE html>
+        <html>
+        <head>
+            <link rel="stylesheet" href="../../css/lytebox.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" media="screen">
+            <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen">
+        </head>
+        <body>
+        <form action="viewImages.php" enctype="multipart/form-data" method="post">
+        <select name="events">';
+    */
+        $eventsquery = "SELECT * FROM `$dbname`.`events`";
+        $eventsresult = mysql_query($eventsquery);
+       /* while($eventsrow = mysql_fetch_array($eventsresult)){
+            echo '<option>'.$eventsrow['event'].'</option>';
+        }*/
+
+    $query = "";
+    if(isset($_POST['eventSearchSubmit'])){
+        $event = $_POST['events'];
+        $query = "SELECT * FROM `$dbname`.`imagerecord` WHERE `event`='$event'";
+    }else{
+        $query = "SELECT * FROM `$dbname`.`imagerecord`";
+     }
+
+    $result = mysql_query($query);
+    while($rows = mysql_fetch_array($result)){
+        $path = 'core/UnivKhabhar/upload/'.$rows['event'].'/'.$rows['image_name'];
+        $path2 ='core/UnivKhabhar/upload/'.$rows['event'].'/resized_'.$rows['image_name'];
+        echo '<li class="span3" style="display:block; height:220px" ><a href="'.$path.'" class="magnifier" style=""><img alt=""  src="'.$path2.'"></a></li> ';
+    }
+
+   ?>

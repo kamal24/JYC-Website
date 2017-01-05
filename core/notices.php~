@@ -1,0 +1,100 @@
+
+<head>
+  <title>Notices</title>
+
+	
+ <link rel="stylesheet" href="css/clubs.css" type="text/css" />
+  
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <!--<script src="js/modernizr-1.5.min.js"></script>--> 
+    <script type="text/javascript" >
+
+	
+  $(".tile").click(function tileclick(){
+       var page = $(this).attr('alt');
+      
+        
+    $.ajax({url:"core/get.php",success:function(result){
+    
+      $("#head").html(result);
+    }});
+  });
+
+</script>
+  
+ 
+ </head> 
+   
+<div class="container">
+
+<div class="demo-wrapper" >
+
+<div class="s-page random-restored-page">
+    <h2 class="page-title" id="head" ></h2>
+    <div class="close-button s-close-button">x</div>
+  </div>
+ <div class="s-page custom-page">
+    <h2 class="page-title" id="head" >Thank You</h2>
+    <div class="close-button s-close-button">x</div>
+  </div>
+  
+<div class="r-page random-r-page">
+    <div class="page-content">
+      <h2 class="page-title" id="head">App Screen</h2>
+      <p  style="font-size:20px;opacity:1;">Chew iPad power cord chew iPad power cord attack feet chase mice leave dead animals as gifts and stick butt in face chew iPad power cord. Chase mice. Run in circles use lap as chair why must they do that. Intrigued by the shower destroy couch leave hair everywhere sleep on keyboard chew iPad power cord. Use lap as chair. Missing until dinner time stand in front of the computer screen, intently sniff hand. Find something else more interesting. Destroy couch play time so inspect anything brought into the house hate dog burrow under covers. Sleep on keyboard destroy couch so hate dog so hide when guests come over. Chase mice destroy couch lick butt throwup on your pillow use lap as chair yet intrigued by the shower but climb leg. Stare at ceiling make muffins or hunt anything that moves
+claw drapes. Intently sniff hand intrigued by the shower. Why must they do that. Cat snacks leave dead animals as gifts or inspect anything brought into the house sweet beast so stare at ceiling give attitude. Flop over claw drapes but sun bathe lick butt, and chase mice. Rub face on everything lick butt leave hair everywhere lick butt, missing until dinner time for use lap as chair lick butt. Make muffins leave dead animals as gifts play time. Chew foot intrigued by the shower stare at ceiling inspect anything brought into the house yet hopped up on goofballs. 
+
+      Hunt anything that moves intently sniff hand for hunt anything that moves play time. Chew foot climb leg throwup on your pillow so lick butt yet make muffins hate dog. Intrigued by the shower. Intently sniff hand shake treat bag. Cat snacks burrow under covers make muffins but all of a sudden go crazy find something else more interesting. Flop over chase mice. Give attitude. Inspect anything brought into the house. Stick butt in face sun bathe so find something else more interesting and intrigued by the shower. Rub face on everything use lap as chair. 
+
+      Under the bed claw drapes chase mice but leave hair everywhere yet make muffins yet claw drapes. Use lap as chair. Find something else more interesting stretch for under the bed. Nap all day intrigued by the shower, hate dog sweet beast intently sniff hand so hate dog nap all day. Swat at dog hide when guests come over and mark territory chase mice for cat snacks. Use lap as chair. Lick butt throwup on your pillow need to chase tail. 
+
+      Mark territory. Stick butt in face shake treat bag yet hunt anything that moves, yet hopped up on goofballs yet stare at ceiling under the bed. Give attitude chase imaginary bugs stretch so hunt anything that moves so hide when guests come over but intrigued by the shower find something else more interesting. Make muffins behind the couch for chew foot. Sweet beast flop over but throwup on your pillow. Intently sniff hand use lap as chair and missing until dinner time and chase imaginary bugs. 
+  
+      </p>
+    
+    </div>
+     <div class="close-button r-close-button">x</div>
+</div>
+    
+   
+  
+
+  <div class="dashboard clearfix1">
+<?php
+$ques=array("rgba(0,191,255,0.5)","rgba(0,128,128,1)","rgba(255,127,98,1)","rgba(245,245,245,1)","rgba(123,104,238,1)","rgba(32,178,170,1)","rgba(60,179,113,1)","rgba(128,128,0,1)","rgba(188,143,143,1)","rgba(0,128,128,1)");
+$n=0;
+echo '<div class="col1 clearfix1">';
+for($i=0;$i<12;$i++)
+{
+$s="my name is kamal i want to know about the value of sin kmala kummar is great then how can i do it man plz explain me properly this one 
+jhjjjjjjjjjjj you are great yaar";
+$ran=rand(0,9);
+$id=rand(0,10);
+echo "<div class='tile' id='post1' class='post' alt='$id' data-page-type='r-page' data-page-name='random-r-page' style='background-color:$ques[$n]'>$s<div style='background-color:$ques[$ran]'><p><a href='#link'>cultural club</a></p></div></div>";
+						
+echo "<div class='tile' id='post1' class='post' alt='$id' data-page-type='s-page' data-page-name='random-restored-page' style='background-color:$ques[$n]'>$s
+<div style='background-color:$ques[$ran]'><p><a href='#link'>cultural club</a></p></div></div>";
+
+echo "<div class='tile' id='post1' class='post' alt='$id' data-page-type='s-page' data-page-name='random-restored-page' style='background-color:$ques[$n]'>$s
+<figcaption class='tile-caption caption-left'>Slide-out Caption from left</figcaption><div style='background-color:$ques[$ran]'><p><a href='#link'>cultural club</a></p></div></div>";
+
+echo "<div class='tile' id='post1' class='post' alt='$id' data-page-type='s-page' data-page-name='random-restored-page' style='background-color:$ques[$n]'>$s
+<figcaption class='tile-caption caption-bottom'>Slide-out Caption from left</figcaption><div style='background-color:$ques[$ran]'><p><a href='#link'>cultural club</a></p></div></div>";
+
+$n++;
+if($n==10) 
+{
+$n=0;
+}
+} 
+echo '</div>';
+?>
+</div>
+</div>
+</div>
+
+</div>
+ <!--<script src="js/jquery-1.8.2.min.js"></script> -->
+  <script src="js/scripts.js"></script>
+
+

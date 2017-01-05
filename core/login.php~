@@ -1,0 +1,39 @@
+<?php
+
+session_start();
+//we will use for password encr hash('sha512', rand());
+// variables used for checking
+$username = $_POST['uname'];
+$password = $_POST['pwd'];
+if(empty($username) || empty($password)) 
+    { 
+       echo '<script type="text/javascript"> alert ("Please go back and fill in all required lines"); window.history.back()</script>';
+    }
+else{
+include_once('../connect.php');
+
+$query = "SELECT password FROM `forum`.`user` WHERE username = '$username'";
+$result = mysql_query($query);
+if(mysql_num_rows($result)==0)
+{
+echo '<script type="text/javascript">alert("username doesnot exist"); window.history.back()</script>';
+/*header('Location:' . $_SERVER['HTTP_REFERER']); */ 
+
+}
+else {
+$row = mysql_fetch_array($result);
+if($password==$row['password']){
+setcookie('uname',"$username",time()+3600*24,"/");      
+/*echo '<script type="text/javascript">alert("you have successfully logged in");</script>';*/
+/*header("Location:../../../core/user/userprofile.php");*/
+header('Location:' . $_SERVER['HTTP_REFERER']);
+}
+
+else {
+//echo "<script>alert('your password is wrong'); window.history.back()</script>";
+/*header('Location:' . $_SERVER['HTTP_REFERER']);  */
+}
+}
+mysql_close($dbc);
+}
+?>
